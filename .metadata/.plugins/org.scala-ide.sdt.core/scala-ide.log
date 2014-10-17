@@ -1,0 +1,479 @@
+2014-04-24 14:38:02,072 ERROR [Worker-8] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-04-24 14:38:02,073 ERROR [Worker-8] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-04-24 14:38:02,074 ERROR [Worker-8] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-04-24 14:40:28,566 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during instrumentation of ScriptCompilationUnit(L/hello-project/src/greeter/Tester.sc)
+org.scalaide.worksheet.runtime.MissingTopLevelObjectDeclaration: Couldn't find top level object declaration in source Tester.sc
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrumentProgram(SourceInstrumenter.scala:33)
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrument(SourceInstrumenter.scala:20)
+	at org.scalaide.worksheet.runtime.WorksheetRunner$$anonfun$act$1$$anonfun$apply$1.applyOrElse(WorksheetRunner.scala:58)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.scala$actors$InternalReplyReactor$$super$resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.searchMailbox(WorksheetRunner.scala:33)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2014-04-29 17:14:53,564 ERROR [Worker-170] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-04-29 17:14:53,566 ERROR [Worker-170] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-04-29 17:14:53,566 ERROR [Worker-170] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-03 14:42:20,518 ERROR [Worker-130] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-03 14:42:20,520 ERROR [Worker-130] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-03 14:42:20,520 ERROR [Worker-130] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-04 16:22:03,100 ERROR [Worker-0] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-04 16:22:03,103 ERROR [Worker-0] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-04 16:22:03,103 ERROR [Worker-0] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-04 16:34:21,821 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during askOption
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at scala.tools.nsc.interactive.Response.get(Response.scala:74)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:146)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:137)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:102)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:95)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:30)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:95)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
+	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2014-05-04 16:35:48,711 ERROR [Worker-2] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-04 16:35:48,712 ERROR [Worker-2] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-04 16:35:48,712 ERROR [Worker-2] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-05 15:36:21,731 ERROR [Worker-43] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-05 15:36:21,735 ERROR [Worker-43] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-05 15:36:21,735 ERROR [Worker-43] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-08 09:48:31,070 ERROR [Worker-73] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-08 09:48:31,071 ERROR [Worker-73] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-08 09:48:31,071 ERROR [Worker-73] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-08 10:55:28,638 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during askOption
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at scala.tools.nsc.interactive.Response.get(Response.scala:74)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:146)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:137)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.scala$tools$eclipse$ScalaHover$$anonfun$$hoverInfo$1(ScalaHover.scala:24)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1$$anonfun$apply$3.apply(ScalaHover.scala:41)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1$$anonfun$apply$3.apply(ScalaHover.scala:40)
+	at scala.Option.flatMap(Option.scala:170)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.apply(ScalaHover.scala:40)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.apply(ScalaHover.scala:21)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:108)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:95)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
+	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2014-05-08 14:16:45,637 ERROR [Worker-42] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-08 14:16:45,638 ERROR [Worker-42] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-08 14:16:45,638 ERROR [Worker-42] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-09 10:18:41,275 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error in Scala compiler
+org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2684)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply$mcZ$sp(ClasspathManagement.scala:267)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:102)
+	at scala.tools.eclipse.ClasspathManagement$class.isZipFileScalaLib$1(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:282)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:275)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:275)
+	at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:121)
+	at scala.tools.eclipse.ScalaProject.scalaClasspath(ScalaProject.scala:80)
+	at scala.tools.eclipse.buildmanager.sbtintegration.SbtInputs$$anon$3.classpath(SbtInputs.scala:40)
+	at sbt.compiler.IC$.compile(IncrementalCompiler.scala:21)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.runCompiler(EclipseSbtBuildManager.scala:133)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.update(EclipseSbtBuildManager.scala:124)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.build(EclipseSbtBuildManager.scala:178)
+	at scala.tools.eclipse.ScalaProject.build(ScalaProject.scala:666)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:119)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: /Users/NextIdea/Code/coursera/fp-scala/funsets/lib_managed/jars/org.scala-lang/scala-actors/scala-actors-2.10.0.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:214)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:144)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:158)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2677)
+	... 34 more
+2014-05-09 10:18:42,312 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Evaluator actor crashed 
+org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2648)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply$mcZ$sp(ClasspathManagement.scala:267)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:102)
+	at scala.tools.eclipse.ClasspathManagement$class.isZipFileScalaLib$1(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:282)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:275)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:275)
+	at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:121)
+	at scala.tools.eclipse.ScalaProject.scalaClasspath(ScalaProject.scala:80)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.org$scalaide$worksheet$runtime$WorksheetRunner$$classpath(WorksheetRunner.scala:95)
+	at org.scalaide.worksheet.runtime.WorksheetRunner$$anonfun$act$1$$anonfun$apply$1.applyOrElse(WorksheetRunner.scala:72)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.scala$actors$InternalReplyReactor$$super$resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.searchMailbox(WorksheetRunner.scala:33)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.zip.ZipException
+	... 38 more
+2014-05-09 10:19:10,182 ERROR [ForkJoinPool-2-worker-13] - System.err - WorksheetManager <actor>: caught org.eclipse.core.runtime.CoreException: I/O exception
+2014-05-09 10:19:10,184 ERROR [ForkJoinPool-2-worker-13] - System.err - org.eclipse.core.runtime.CoreException: I/O exception
+2014-05-09 10:19:10,184 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2648)
+2014-05-09 10:19:10,184 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply$mcZ$sp(ClasspathManagement.scala:267)
+2014-05-09 10:19:10,184 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.util.control.Exception$Catch.apply(Exception.scala:102)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ClasspathManagement$class.isZipFileScalaLib$1(ClasspathManagement.scala:266)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:282)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:275)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:275)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:121)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.tools.eclipse.ScalaProject.scalaClasspath(ScalaProject.scala:80)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.scalaide.worksheet.runtime.ResidentCompiler$.apply(ResidentCompiler.scala:15)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.scalaide.worksheet.runtime.WorksheetRunner.<init>(WorksheetRunner.scala:39)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.scalaide.worksheet.runtime.WorksheetRunner$.apply(WorksheetRunner.scala:16)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager.org$scalaide$worksheet$runtime$WorksheetsManager$$obtainEvaluator(WorksheetsManager.scala:63)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager$$anonfun$act$1$$anonfun$apply$1.applyOrElse(WorksheetsManager.scala:31)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+2014-05-09 10:19:10,185 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager.scala$actors$InternalReplyReactor$$super$resumeReceiver(WorksheetsManager.scala:21)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager.resumeReceiver(WorksheetsManager.scala:21)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager.searchMailbox(WorksheetsManager.scala:21)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+2014-05-09 10:19:10,186 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+2014-05-09 10:19:10,187 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+2014-05-09 10:19:10,187 ERROR [ForkJoinPool-2-worker-13] - System.err - at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2014-05-09 10:19:10,187 ERROR [ForkJoinPool-2-worker-13] - System.err - Caused by: java.util.zip.ZipException
+2014-05-09 10:19:10,187 ERROR [ForkJoinPool-2-worker-13] - System.err - ... 41 more
+2014-05-09 10:19:10,389 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error in Scala compiler
+org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2648)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply$mcZ$sp(ClasspathManagement.scala:267)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:102)
+	at scala.tools.eclipse.ClasspathManagement$class.isZipFileScalaLib$1(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:282)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:275)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:275)
+	at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:121)
+	at scala.tools.eclipse.ScalaProject.scalaClasspath(ScalaProject.scala:80)
+	at scala.tools.eclipse.buildmanager.sbtintegration.SbtInputs$$anon$3.classpath(SbtInputs.scala:40)
+	at sbt.compiler.IC$.compile(IncrementalCompiler.scala:21)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.runCompiler(EclipseSbtBuildManager.scala:133)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.update(EclipseSbtBuildManager.scala:124)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.build(EclipseSbtBuildManager.scala:178)
+	at scala.tools.eclipse.ScalaProject.build(ScalaProject.scala:666)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:119)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.util.zip.ZipException
+	... 35 more
+2014-05-09 10:24:27,567 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error in Scala compiler
+org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2648)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply$mcZ$sp(ClasspathManagement.scala:267)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:102)
+	at scala.tools.eclipse.ClasspathManagement$class.isZipFileScalaLib$1(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:282)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:275)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:275)
+	at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:121)
+	at scala.tools.eclipse.ScalaProject.scalaClasspath(ScalaProject.scala:80)
+	at scala.tools.eclipse.buildmanager.sbtintegration.SbtInputs$$anon$3.classpath(SbtInputs.scala:40)
+	at sbt.compiler.IC$.compile(IncrementalCompiler.scala:21)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.runCompiler(EclipseSbtBuildManager.scala:133)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.update(EclipseSbtBuildManager.scala:124)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.build(EclipseSbtBuildManager.scala:178)
+	at scala.tools.eclipse.ScalaProject.build(ScalaProject.scala:666)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:119)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.util.zip.ZipException
+	... 35 more
+2014-05-09 10:24:49,092 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error in Scala compiler
+org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2648)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply$mcZ$sp(ClasspathManagement.scala:267)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:102)
+	at scala.tools.eclipse.ClasspathManagement$class.isZipFileScalaLib$1(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:282)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:275)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:275)
+	at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:121)
+	at scala.tools.eclipse.ScalaProject.scalaClasspath(ScalaProject.scala:80)
+	at scala.tools.eclipse.buildmanager.sbtintegration.SbtInputs$$anon$3.classpath(SbtInputs.scala:40)
+	at sbt.compiler.IC$.compile(IncrementalCompiler.scala:21)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.runCompiler(EclipseSbtBuildManager.scala:133)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.update(EclipseSbtBuildManager.scala:124)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.build(EclipseSbtBuildManager.scala:178)
+	at scala.tools.eclipse.ScalaProject.build(ScalaProject.scala:666)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:119)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.util.zip.ZipException
+	... 35 more
+2014-05-09 10:25:01,134 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error in Scala compiler
+org.eclipse.core.runtime.CoreException: I/O exception
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:2648)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply$mcZ$sp(ClasspathManagement.scala:267)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$isZipFileScalaLib$1$2.apply(ClasspathManagement.scala:266)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:102)
+	at scala.tools.eclipse.ClasspathManagement$class.isZipFileScalaLib$1(ClasspathManagement.scala:266)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:282)
+	at scala.tools.eclipse.ClasspathManagement$$anonfun$scalaLibraries$2.apply(ClasspathManagement.scala:275)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaLibraries(ClasspathManagement.scala:275)
+	at scala.tools.eclipse.ScalaProject.scalaLibraries(ScalaProject.scala:80)
+	at scala.tools.eclipse.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:121)
+	at scala.tools.eclipse.ScalaProject.scalaClasspath(ScalaProject.scala:80)
+	at scala.tools.eclipse.buildmanager.sbtintegration.SbtInputs$$anon$3.classpath(SbtInputs.scala:40)
+	at sbt.compiler.IC$.compile(IncrementalCompiler.scala:21)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.runCompiler(EclipseSbtBuildManager.scala:133)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.update(EclipseSbtBuildManager.scala:124)
+	at scala.tools.eclipse.buildmanager.sbtintegration.EclipseSbtBuildManager.build(EclipseSbtBuildManager.scala:178)
+	at scala.tools.eclipse.ScalaProject.build(ScalaProject.scala:666)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:119)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.util.zip.ZipException
+	... 35 more
+2014-05-09 11:01:52,377 ERROR [Worker-4] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-09 11:01:52,379 ERROR [Worker-4] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-09 11:01:52,379 ERROR [Worker-4] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-13 15:27:46,425 ERROR [Worker-77] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-13 15:27:46,426 ERROR [Worker-77] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-13 15:27:46,426 ERROR [Worker-77] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-20 11:26:06,792 ERROR [Worker-69] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-05-20 11:26:06,794 ERROR [Worker-69] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-05-20 11:26:06,794 ERROR [Worker-69] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-05-27 13:41:29,688  WARN [Worker-2] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2014-09-04 17:06:52,025 ERROR [Worker-10] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-09-04 17:06:52,028 ERROR [Worker-10] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-09-04 17:06:52,028 ERROR [Worker-10] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-09-04 17:17:27,247 ERROR [Worker-2] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-09-04 17:17:27,248 ERROR [Worker-2] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-09-04 17:17:27,248 ERROR [Worker-2] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-09-15 14:47:06,829 ERROR [Worker-1] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-09-15 14:47:06,830 ERROR [Worker-1] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-09-15 14:47:06,830 ERROR [Worker-1] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-09-29 09:53:20,050  WARN [Worker-1] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2014-09-29 17:23:27,689 ERROR [Worker-30] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-09-29 17:23:27,690 ERROR [Worker-30] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-09-29 17:23:27,690 ERROR [Worker-30] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-08 14:21:49,126 ERROR [Worker-60] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-08 14:21:49,127 ERROR [Worker-60] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-08 14:21:49,128 ERROR [Worker-60] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-09 16:51:22,215 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during askOption
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at scala.tools.nsc.interactive.Response.get(Response.scala:74)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:146)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:137)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:102)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:95)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:30)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:95)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
+	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2014-10-09 22:32:43,291 ERROR [Worker-15] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-09 22:32:43,292 ERROR [Worker-15] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-09 22:32:43,292 ERROR [Worker-15] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-10 16:07:08,643 ERROR [Worker-46] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-10 16:07:08,644 ERROR [Worker-46] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-10 16:07:08,644 ERROR [Worker-46] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-13 12:23:17,945 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during askOption
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at scala.tools.nsc.interactive.Response.get(Response.scala:74)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:146)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:137)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.scala$tools$eclipse$ScalaHover$$anonfun$$hoverInfo$1(ScalaHover.scala:24)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1$$anonfun$apply$3.apply(ScalaHover.scala:41)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1$$anonfun$apply$3.apply(ScalaHover.scala:40)
+	at scala.Option.flatMap(Option.scala:170)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.apply(ScalaHover.scala:40)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.apply(ScalaHover.scala:21)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:108)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:95)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
+	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2014-10-13 16:06:49,638  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - ProgramExecutor actor </Users/NextIdea/Code/coursera/progfun-004/patmat/src/main/scala/patmat/HuffmanTest.sc> self-healing...
+java.lang.NullPointerException
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.org$scalaide$worksheet$editor$ScriptEditor$DefaultEditorProxy$$doc(ScriptEditor.scala:72)
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.getContents(ScriptEditor.scala:74)
+	at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.<init>(IncrementalDocumentMixer.scala:30)
+	at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$.apply(IncrementalDocumentMixer.scala:16)
+	at org.scalaide.worksheet.runtime.ProgramExecutor$$anonfun$act$1$$anonfun$apply$1.applyOrElse(ProgramExecutor.scala:167)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2014-10-13 22:50:02,337 ERROR [Worker-24] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-13 22:50:02,340 ERROR [Worker-24] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-13 22:50:02,340 ERROR [Worker-24] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-14 17:32:50,726 ERROR [Worker-73] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-14 17:32:50,730 ERROR [Worker-73] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-14 17:32:50,730 ERROR [Worker-73] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-16 14:27:19,417 ERROR [Worker-32] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-16 14:27:19,464 ERROR [Worker-32] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-16 14:27:19,464 ERROR [Worker-32] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-17 11:09:41,209 ERROR [Worker-17] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-17 11:09:41,211 ERROR [Worker-17] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-17 11:09:41,211 ERROR [Worker-17] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

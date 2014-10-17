@@ -1,0 +1,40 @@
+package recfun
+
+import java.lang
+
+object recfun {
+	// Hint: Think of the degenerate cases.
+	// How many ways can you give change for 0 CHF?
+	// How many ways can you give change for >0 CHF, if you have no coins?
+
+	// Returns: the amount of ways the money can be split using the denominations
+  def countChange(money: Int, coins: List[Int]): Int = {
+  	//if (!coins.isEmpty) println("m:" + money + ", c:" + coins.head)
+		if (money == 0) 1
+		// original had (cond || cond)
+		else if (coins.isEmpty || (coins.isEmpty && money > 0)) 0
+		else
+			countChange(money - coins.head, (if (money % coins.head > 0) coins.tail else coins)) +
+			countChange(money, coins.tail)
+  }                                               //> countChange: (money: Int, coins: List[Int])Int
+  
+	// 3 ways to give change for 4 if you have coins with denomiation 1 and 2: 1+1+1+1, 1+1+2, 2+2.
+  //countChange(4, List(1,2))
+  countChange(301,List(5,10,20,50,100,200,500)) == 0
+                                                  //> java.lang.StackOverflowError
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:13)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(recfun.recfun.scala:17)
+                                                  //| 	at recfun.recfun$$anonfun$main$1.countChange$1(rec
+                                                  //| Output exceeds cutoff limit.
+  //countChange(4, List(1,2)) == 3
+}
