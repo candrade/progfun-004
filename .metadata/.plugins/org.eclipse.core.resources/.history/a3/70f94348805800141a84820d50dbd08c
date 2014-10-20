@@ -1,0 +1,9 @@
+package forcomp
+
+object ClassNotes {
+  val r: Range = 1 until 5
+  val s: Range = 1 to 5
+  
+  val s = "hello world"
+  val pairs = List(1,2,3) zip s
+}

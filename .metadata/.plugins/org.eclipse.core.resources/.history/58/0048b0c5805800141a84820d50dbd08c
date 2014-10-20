@@ -1,0 +1,15 @@
+package forcomp
+
+object ClassNotes {
+  val r: Range = 1 until 5                        //> r  : Range = Range(1, 2, 3, 4)
+  val s: Range = 1 to 5                           //> s  : Range = Range(1, 2, 3, 4, 5)
+  
+  val str = "hello world"                         //> str  : String = hello world
+  val pairs = List(1,2,3) zip str unzip           //> pairs  : (List[Int], List[Char]) = (List(1, 2, 3),List(h, e, l))
+  
+  val M = 10
+  val N = 10
+  
+  // List all combos of numbers x and y where x is drawn from 1..M and y is drawn from 1..N
+  (1 to M) flatMap (x => (1 to N) map (y => (x, y)))
+}
