@@ -35,8 +35,7 @@ object Anagrams {
    *  same character, and are represented as a lowercase character in the occurrence list.
    */
   def wordOccurrences(w: Word): Occurrences =
-    w.toLowerCase()
-      .toList
+    w.toLowerCase().toList
       .groupBy (s => s)
       .map { case (x, y) => (x, y.length) }
       .toList
@@ -93,10 +92,30 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
-  def combinations(occurrences: Occurrences): List[Occurrences] = ???
+  def combinations(occurrences: Occurrences): List[Occurrences] = {
+    val charSeq = for { o <- occurrences; i <- 1 to o._2 } yield o._1
 
-  /** Subtracts occurrence list `y` from occurrence list `x`.
-   * 
+    def add(c: Char, combos: List[String]): List[String] = combos match {
+      case Nil => List(c.toString)
+      // Add the original combo, the combo combined with the new element, then recurse.
+      // This way, we keep all the elements of the original list of combos along with
+      // the new set of chars.
+      case x :: xs => c + x :: x :: add(c, xs)
+    }
+
+    def combine(r: List[Char]): List[String] = r match {
+      case Nil => List()
+      case x :: xs => add(x, combine(xs))
+    }
+    
+    // Add the empty string to the combination result to represent
+    // empty set.
+    (("" :: combine(charSeq)).distinct) map (s => wordOccurrences(s))
+  }
+
+  /**
+   * Subtracts occurrence list `y` from occurrence list `x`.
+   *
    *  The precondition is that the occurrence list `y` is a subset of
    *  the occurrence list `x` -- any character appearing in `y` must
    *  appear in `x`, and its frequency in `y` must be smaller or equal
@@ -105,10 +124,16 @@ object Anagrams {
    *  Note: the resulting value is an occurrence - meaning it is sorted
    *  and has no zero-entries.
    */
-  def subtract(x: Occurrences, y: Occurrences): Occurrences = ???
+  def subtract(x: Occurrences, y: Occurrences): Occurrences =
+    y.foldLeft(x.toMap)((x, occur) => {
+      val diff = x(occur._1) - occur._2
+      if (diff > 0) x.updated(occur._1, diff)
+      else x - occur._1
+    }).toList.sorted
 
-  /** Returns a list of all anagram sentences of the given sentence.
-   *  
+  /**
+   * Returns a list of all anagram sentences of the given sentence.
+   *
    *  An anagram of a sentence is formed by taking the occurrences of all the characters of
    *  all the words in the sentence, and producing all possible combinations of words with those characters,
    *  such that the words have to be from the dictionary.
@@ -119,7 +144,7 @@ object Anagrams {
    *  Also, two sentences with the same words but in a different order are considered two different anagrams.
    *  For example, sentences `List("You", "olive")` and `List("olive", "you")` are different anagrams of
    *  `List("I", "love", "you")`.
-   *  
+   *
    *  Here is a full example of a sentence `List("Yes", "man")` and its anagrams for our dictionary:
    *
    *    List(
@@ -141,12 +166,24 @@ object Anagrams {
    *
    *  The different sentences do not have to be output in the order shown above - any order is fine as long as
    *  all the anagrams are there. Every returned word has to exist in the dictionary.
-   *  
+   *
    *  Note: in case that the words of the sentence are in the dictionary, then the sentence is the anagram of itself,
    *  so it has to be returned in this list.
    *
    *  Note: There is only one anagram of an empty sentence.
    */
-  def sentenceAnagrams(sentence: Sentence): List[Sentence] = ???
+  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+    def compileAnagrams(occurrences: Occurrences): List[Sentence] = {
+      if (occurrences.isEmpty) List(Nil)
+      else
+        for {
+          subset <- combinations(occurrences)
+          word <- dictionaryByOccurrences(subset)
+          rest <- compileAnagrams(subtract(occurrences, subset))
+        } yield word :: rest
+    }
+
+    compileAnagrams(sentenceOccurrences(sentence))
+  }   
 
 }

@@ -622,3 +622,70 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException
 	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$parseAndEnter(Global.scala:580)
 	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:487)
 	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2014-10-21 16:00:14,150 ERROR [ForkJoinPool-1-worker-9] - System.err - WorksheetManager <actor>: caught java.lang.NullPointerException
+2014-10-21 16:00:14,153 ERROR [ForkJoinPool-1-worker-9] - System.err - java.lang.NullPointerException
+2014-10-21 16:00:14,153 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.tools.eclipse.logging.EclipseLogger$.logInUiThread(EclipseLogger.scala:90)
+2014-10-21 16:00:14,153 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.tools.eclipse.logging.EclipseLogger$.log(EclipseLogger.scala:77)
+2014-10-21 16:00:14,153 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.tools.eclipse.logging.EclipseLogger$.error(EclipseLogger.scala:60)
+2014-10-21 16:00:14,153 ERROR [ForkJoinPool-1-worker-9] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager$$anonfun$act$1$$anonfun$apply$1.applyOrElse(WorksheetsManager.scala:37)
+2014-10-21 16:00:14,153 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+2014-10-21 16:00:14,153 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+2014-10-21 16:00:14,153 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager.scala$actors$InternalReplyReactor$$super$resumeReceiver(WorksheetsManager.scala:21)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager.resumeReceiver(WorksheetsManager.scala:21)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at org.scalaide.worksheet.runtime.WorksheetsManager.searchMailbox(WorksheetsManager.scala:21)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+2014-10-21 16:00:14,154 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+2014-10-21 16:00:14,155 ERROR [ForkJoinPool-1-worker-9] - System.err - at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2014-10-23 09:34:20,472 ERROR [Worker-204] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-23 09:34:20,473 ERROR [Worker-204] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-23 09:34:20,473 ERROR [Worker-204] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-29 12:23:32,264 ERROR [Worker-271] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-29 12:23:32,266 ERROR [Worker-271] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-29 12:23:32,266 ERROR [Worker-271] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-29 14:13:15,206 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during askOption
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at scala.tools.nsc.interactive.Response.get(Response.scala:74)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:146)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:137)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.scala$tools$eclipse$ScalaHover$$anonfun$$hoverInfo$1(ScalaHover.scala:24)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1$$anonfun$apply$3.apply(ScalaHover.scala:41)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1$$anonfun$apply$3.apply(ScalaHover.scala:40)
+	at scala.Option.flatMap(Option.scala:170)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.apply(ScalaHover.scala:40)
+	at scala.tools.eclipse.ScalaHover$$anonfun$getHoverInfo$1.apply(ScalaHover.scala:21)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:108)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:95)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
+	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2014-10-29 14:55:50,682 ERROR [Worker-70] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-29 14:55:50,683 ERROR [Worker-70] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-29 14:55:50,683 ERROR [Worker-70] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-30 12:32:11,725  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2014-10-30 12:33:33,141 ERROR [Worker-41] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-30 12:33:33,143 ERROR [Worker-41] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-30 12:33:33,144 ERROR [Worker-41] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-30 12:44:07,256 ERROR [Worker-5] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-30 12:44:07,261 ERROR [Worker-5] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-30 12:44:07,262 ERROR [Worker-5] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

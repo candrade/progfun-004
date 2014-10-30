@@ -7,11 +7,11 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/NextIdea/Code/coursera/progfun-004/streams"/>
 			<item value="/Users/NextIdea/Code/coursera/progfun-004/forcomp"/>
 			<item value="/Users/NextIdea/Code/coursera/progfun-004/patmat"/>
 			<item value="/Users/NextIdea/Code/coursera/progfun-004/objsets"/>
 			<item value="/Users/NextIdea/Code/coursera/progfun-004/funsets"/>
-			<item value="/Users/NextIdea/Code/coursera/progfun-004/_archive"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
